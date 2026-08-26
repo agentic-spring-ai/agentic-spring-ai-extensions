@@ -17,17 +17,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.alibaba.cloud.ai</groupId>
-        <artifactId>spring-ai-alibaba-extensions</artifactId>
+        <groupId>io.github.agentic-spring-ai</groupId>
+        <artifactId>agentic-spring-ai-extensions</artifactId>
         <version>${revision}</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>spring-ai-alibaba-observation-extension</artifactId>
+    <artifactId>agentic-spring-ai-observation-extension</artifactId>
     <packaging>jar</packaging>
-    <name>Spring AI Alibaba Observation Extension</name>
+    <name>Agentic Spring AI Observation Extension</name>
     <description>Spring AI Alibaba Observation Extension Module, ARMS Implementation</description>
 
-    <url>https://github.com/alibaba/spring-ai-alibaba</url>
+    <url>https://github.com/alibaba/agentic-spring-ai</url>
 
     <licenses>
         <license>
@@ -39,18 +39,21 @@
 
     <developers>
         <developer>
-            <id>chickenlj</id>
-            <name>Jun Liu</name>
-            <email>ken.lj.hz@gmail.com</email>
-            <organization>Alibaba Cloud</organization>
-            <organizationUrl>https://aliyun.com</organizationUrl>
+            <id>yuluo-yx</id>
+            <name>yuluo-yx</name>
+            <url>https://github.com/yuluo-yx</url>
+        </developer>
+        <developer>
+            <id>Aias00</id>
+            <name>Aias00</name>
+            <url>https://github.com/Aias00</url>
         </developer>
     </developers>
 
     <scm>
-        <connection>git://github.com/alibaba/spring-ai-alibaba.git</connection>
-        <developerConnection>git@github.com:alibaba/spring-ai-alibaba.git</developerConnection>
-        <url>https://github.com/alibaba/spring-ai-alibaba</url>
+        <connection>git://github.com/alibaba/agentic-spring-ai.git</connection>
+        <developerConnection>git@github.com:alibaba/agentic-spring-ai.git</developerConnection>
+        <url>https://github.com/alibaba/agentic-spring-ai</url>
     </scm>
 
     <dependencies>

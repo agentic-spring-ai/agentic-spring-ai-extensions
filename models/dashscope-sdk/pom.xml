@@ -18,18 +18,18 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.alibaba.cloud.ai</groupId>
-        <artifactId>spring-ai-alibaba-extensions</artifactId>
+        <groupId>io.github.agentic-spring-ai</groupId>
+        <artifactId>agentic-spring-ai-extensions</artifactId>
         <version>${revision}</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>spring-ai-alibaba-dashscope-sdk</artifactId>
+    <artifactId>agentic-spring-ai-dashscope-sdk</artifactId>
     <packaging>jar</packaging>
-    <name>Spring AI Alibaba DashScope SDK Model Extension</name>
+    <name>Agentic Spring AI DashScope SDK Model Extension</name>
     <description>Spring AI Alibaba DashScope SDK based model implementation</description>
 
-    <url>https://github.com/alibaba/spring-ai-alibaba</url>
+    <url>https://github.com/alibaba/agentic-spring-ai</url>
 
     <licenses>
         <license>
@@ -41,18 +41,21 @@
 
     <developers>
         <developer>
-            <id>chickenlj</id>
-            <name>Jun Liu</name>
-            <email>ken.lj.hz@gmail.com</email>
-            <organization>Alibaba Cloud</organization>
-            <organizationUrl>https://aliyun.com</organizationUrl>
+            <id>yuluo-yx</id>
+            <name>yuluo-yx</name>
+            <url>https://github.com/yuluo-yx</url>
+        </developer>
+        <developer>
+            <id>Aias00</id>
+            <name>Aias00</name>
+            <url>https://github.com/Aias00</url>
         </developer>
     </developers>
 
     <scm>
-        <connection>git://github.com/alibaba/spring-ai-alibaba.git</connection>
-        <developerConnection>git@github.com:alibaba/spring-ai-alibaba.git</developerConnection>
-        <url>https://github.com/alibaba/spring-ai-alibaba</url>
+        <connection>git://github.com/alibaba/agentic-spring-ai.git</connection>
+        <developerConnection>git@github.com:alibaba/agentic-spring-ai.git</developerConnection>
+        <url>https://github.com/alibaba/agentic-spring-ai</url>
     </scm>
 
     <dependencies>

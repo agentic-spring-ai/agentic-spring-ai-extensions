@@ -7,11 +7,11 @@ Overall, it takes only two steps to turn your Spring Boot application into an in
 
 Because Spring AI Alibaba is developed based on Spring Boot 3.x, it requires JDK version 17 and above.
 
-Add 'spring-ai-alibaba-starter' dependency to your project.
+Add 'agentic-spring-ai-starter' dependency to your project.
 
 <dependency>
-	<groupId>com.alibaba.cloud.ai</groupId>
-	<artifactId>spring-ai-alibaba-starter</artifactId>
+	<groupId>io.github.agentic.spring.ai</groupId>
+	<artifactId>agentic-spring-ai-starter</artifactId>
 	<version>1.0.0-M3.2</version>
 </dependency>
 NOTICE: Since spring-ai related packages haven't been published to the central repo yet, it's needed to add the following maven repository to your project in order to successfully resolve artifacts like spring-ai-core.
@@ -56,7 +56,7 @@ public class ChatController {
 	}
 }
 Examples
-More examples can be found at spring-ai-alibaba-examples.
+More examples can be found at agentic-spring-ai-examples.
 
 Hello World
 Chat Model

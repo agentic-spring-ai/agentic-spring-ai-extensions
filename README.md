@@ -2,7 +2,7 @@
 
 This project builds upon Spring AI, providing extended implementations of core concepts such as `ChatModel`, `ImageModel`, `AudioModel`, `MCP`, `DocumentParser`, `ChatMemory`, `ToolCallback`, `VectorStore`, etc. It helps developers quickly integrate with Alibaba Cloud Bailian model services, vector database services, chat memory components, tool calling, and other features.
 
-Based on these components, developers can use Spring AI [ChatClient](https://java2ai.com/docs/1.0.0.2/tutorials/basics/chat-client/), or [Spring AI Alibaba Agent Framework](https://github.com/alibaba/spring-ai-alibaba) to quickly build their own AI agent applications. Please choose according to your specific use case.
+Based on these components, developers can use Spring AI [ChatClient](https://java2ai.com/docs/1.0.0.2/tutorials/basics/chat-client/), or [Spring AI Alibaba Agent Framework](https://github.com/alibaba/agentic-spring-ai) to quickly build their own AI agent applications. Please choose according to your specific use case.
 
 **English** | [📖 中文版](README-zh.md)
 
@@ -16,13 +16,13 @@ Based on these components, developers can use Spring AI [ChatClient](https://jav
 ### Use `ChatClient` to Develop a Chatbot
 
 #### Add Dependencies
-To quickly get started with Spring AI Alibaba, add 'spring-ai-alibaba-starter-dashscope' dependency to your java project.
+To quickly get started with Spring AI Alibaba, add 'agentic-spring-ai-starter-dashscope' dependency to your java project.
 
 ```xml
 <dependencyManagement>
   <dependencies>
     <dependency>
-      <groupId>com.alibaba.cloud.ai</groupId>
+      <groupId>io.github.agentic.spring.ai</groupId>
       <artifactId>spring-ai-extensions-bom</artifactId>
       <version>1.1.2.0</version>
       <type>pom</type>
@@ -33,8 +33,8 @@ To quickly get started with Spring AI Alibaba, add 'spring-ai-alibaba-starter-da
 
 <dependencies>
   <dependency>
-    <groupId>com.alibaba.cloud.ai</groupId>
-    <artifactId>spring-ai-alibaba-starter-dashscope</artifactId>
+    <groupId>io.github.agentic.spring.ai</groupId>
+    <artifactId>agentic-spring-ai-starter-dashscope</artifactId>
   </dependency>
 </dependencies>
 ```
@@ -43,8 +43,8 @@ To use DashScope Java SDK based chat model implementation, use the SDK starter i
 
 ```xml
 <dependency>
-  <groupId>com.alibaba.cloud.ai</groupId>
-  <artifactId>spring-ai-alibaba-starter-dashscope-sdk</artifactId>
+  <groupId>io.github.agentic.spring.ai</groupId>
+  <artifactId>agentic-spring-ai-starter-dashscope-sdk</artifactId>
 </dependency>
 ```
 
@@ -89,14 +89,14 @@ Please check [Quick Start](https://java2ai.com/docs/1.0.0.2/get-started/chatbot)
 
 ## Playground and Example
 
-The community has developed a [Playground](https://github.com/springaialibaba/spring-ai-alibaba-examples/tree/main/spring-ai-alibaba-playground) agent that includes a complete front-end UI and back-end implementation. The Playground back-end is developed using Spring AI Alibaba and gives users a quick overview of all core framework capabilities such as chatbot, multi-round conversations, image generation, multi-modality, tool calling, MCP, and RAG.
+The community has developed a [Playground](https://github.com/springaialibaba/agentic-spring-ai-examples/tree/main/agentic-spring-ai-playground) agent that includes a complete front-end UI and back-end implementation. The Playground back-end is developed using Spring AI Alibaba and gives users a quick overview of all core framework capabilities such as chatbot, multi-round conversations, image generation, multi-modality, tool calling, MCP, and RAG.
 
 <p align="center">
     <img src="./docs/imgs/playground.png" alt="PlayGround" style="max-width: 949px; height: 537px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);" />
 </p>
 
-You can [deploy the Playground example locally](https://github.com/springaialibaba/spring-ai-alibaba-examples) and access the experience through your browser, or copy the source code and tweak it to your own business needs to build your own set of AI apps more quickly.
-For more examples, please refer to our official example repository: [https://github.com/springaialibaba/spring-ai-alibaba-examples](https://github.com/springaialibaba/spring-ai-alibaba-examples)
+You can [deploy the Playground example locally](https://github.com/springaialibaba/agentic-spring-ai-examples) and access the experience through your browser, or copy the source code and tweak it to your own business needs to build your own set of AI apps more quickly.
+For more examples, please refer to our official example repository: [https://github.com/springaialibaba/agentic-spring-ai-examples](https://github.com/springaialibaba/agentic-spring-ai-examples)
 
 ## Available Extensions
 
@@ -126,23 +126,23 @@ DashScopeChatModel supports:
 
 #### DashScopeSdkChatModel
 
-DashScope SDK based chat model implementation. Configure with `spring-ai-alibaba-starter-dashscope-sdk` and `spring.ai.model.chat=dashscope-sdk`.
+DashScope SDK based chat model implementation. Configure with `agentic-spring-ai-starter-dashscope-sdk` and `spring.ai.model.chat=dashscope-sdk`.
 
 #### DashScopeSdkImageModel
 
-DashScope SDK based image model implementation. Configure with `spring-ai-alibaba-starter-dashscope-sdk` and `spring.ai.model.image=dashscope-sdk`.
+DashScope SDK based image model implementation. Configure with `agentic-spring-ai-starter-dashscope-sdk` and `spring.ai.model.image=dashscope-sdk`.
 
 #### DashScopeSdkEmbeddingModel
 
-DashScope SDK based embedding model implementation. Configure with `spring-ai-alibaba-starter-dashscope-sdk` and `spring.ai.model.embedding=dashscope-sdk`.
+DashScope SDK based embedding model implementation. Configure with `agentic-spring-ai-starter-dashscope-sdk` and `spring.ai.model.embedding=dashscope-sdk`.
 
 #### DashScopeSdkAudioSpeechModel
 
-DashScope SDK based text-to-speech model implementation. Configure with `spring-ai-alibaba-starter-dashscope-sdk` and `spring.ai.model.audio.speech=dashscope-sdk`.
+DashScope SDK based text-to-speech model implementation. Configure with `agentic-spring-ai-starter-dashscope-sdk` and `spring.ai.model.audio.speech=dashscope-sdk`.
 
 #### DashScopeSdkAudioTranscriptionModel
 
-DashScope SDK based audio transcription model implementation. Configure with `spring-ai-alibaba-starter-dashscope-sdk` and `spring.ai.model.audio.transcription=dashscope-sdk`.
+DashScope SDK based audio transcription model implementation. Configure with `agentic-spring-ai-starter-dashscope-sdk` and `spring.ai.model.audio.transcription=dashscope-sdk`.
 
 #### DashScopeImageModel
 
@@ -172,8 +172,8 @@ MCP provides a standardized protocol for managing and routing AI model contexts.
 **MCP SDK Version**: 0.14.0
 
 **Available Starters:**
-- `spring-ai-alibaba-starter-mcp-registry`
-- `spring-ai-alibaba-starter-mcp-router`
+- `agentic-spring-ai-starter-mcp-registry`
+- `agentic-spring-ai-starter-mcp-router`
 
 ### ToolCallback
 
@@ -258,9 +258,9 @@ Multiple storage backends for managing conversation history and long-term memory
 - **Mem0**: Advanced long-term memory with intelligent summarization and retrieval
 
 Available starters:
-- `spring-ai-alibaba-starter-memory` (short-term memory)
-- `spring-ai-alibaba-starter-memory-long` (long-term memory)
-- Individual storage backend starters (e.g., `spring-ai-alibaba-starter-memory-redis`)
+- `agentic-spring-ai-starter-memory` (short-term memory)
+- `agentic-spring-ai-starter-memory-long` (long-term memory)
+- Individual storage backend starters (e.g., `agentic-spring-ai-starter-memory-redis`)
 
 ### RAG
 
@@ -272,8 +272,8 @@ Popular RAG architecture and a variety of reusable components:
 Available starters:
 ```xml
 <dependency>
-    <groupId>com.alibaba.cloud.ai</groupId>
-    <artifactId>spring-ai-alibaba-starter-rag</artifactId>
+    <groupId>io.github.agentic.spring.ai</groupId>
+    <artifactId>agentic-spring-ai-starter-rag</artifactId>
 </dependency>
 ```
 
@@ -290,8 +290,8 @@ Dynamic prompt management and versioning capabilities:
 **Starter:**
 ```xml
 <dependency>
-    <groupId>com.alibaba.cloud.ai</groupId>
-    <artifactId>spring-ai-alibaba-starter-nacos-prompt</artifactId>
+    <groupId>io.github.agentic.spring.ai</groupId>
+    <artifactId>agentic-spring-ai-starter-nacos-prompt</artifactId>
 </dependency>
 ```
 
@@ -367,8 +367,8 @@ ARMS (Application Real-Time Monitoring Service) integration for comprehensive AI
 **Starter:**
 ```xml
 <dependency>
-    <groupId>com.alibaba.cloud.ai</groupId>
-    <artifactId>spring-ai-alibaba-starter-arms-observation</artifactId>
+    <groupId>io.github.agentic.spring.ai</groupId>
+    <artifactId>agentic-spring-ai-starter-arms-observation</artifactId>
 </dependency>
 ```
 
@@ -382,6 +382,6 @@ This project is licensed under the Apache License 2.0 - see the LICENSE file for
 
 ## Community & Support
 
-- Spring AI Alibaba Agent Framework: [https://github.com/alibaba/spring-ai-alibaba](https://github.com/alibaba/spring-ai-alibaba)
+- Spring AI Alibaba Agent Framework: [https://github.com/alibaba/agentic-spring-ai](https://github.com/alibaba/agentic-spring-ai)
 - Documentation: [https://java2ai.com](https://java2ai.com)
-- Examples: [Spring AI Alibaba Examples](https://github.com/springaialibaba/spring-ai-alibaba-examples)
+- Examples: [Spring AI Alibaba Examples](https://github.com/springaialibaba/agentic-spring-ai-examples)
